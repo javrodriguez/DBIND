@@ -1,5 +1,5 @@
 bam_dir = "./BAM-DD/"
-peak_dir = "./PEAK_DIR/"
+peak_dir = "./PEAK-DIR/"
 
 bam_suffix = ".dd.bam"
 peak_suffix = ".peaks.bed"

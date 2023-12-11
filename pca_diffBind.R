@@ -21,11 +21,6 @@ FX1=function(sample_sheet,out_name,n_cores=1,stats_out=F){
 }
 
 ### RUN ###
-#argv = commandArgs(trailingOnly = T)
-#group_by1 = argv[1L]
-#group_by2 = argv[2L]
-#group_by3 = argv[3L]
-
 group_by1="Factor"
 group_by2="Tissue"
 group_by3="Treatment"
@@ -36,7 +31,7 @@ library(DiffBind)
 
 options(scipen = 999)
 ss = read.csv(ss_file)
-#ss[is.na(ss)]=0
+ss[is.na(ss)]=0
 
 groups1=unique(ss[,group_by1])
 groups2=unique(ss[,group_by2])

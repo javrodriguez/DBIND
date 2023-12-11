@@ -1,6 +1,5 @@
-argv = commandArgs(trailingOnly = T)
-bam_dir = argv[1L]
-peak_dir = argv[2L]
+bam_dir = "/BAM-DD"
+peak_dir = "/PEAK_DIR"
 
 bam_suffix = ".dd.bam"
 peak_suffix = ".peaks.bed"

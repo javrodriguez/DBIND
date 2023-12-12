@@ -10,7 +10,7 @@ FX1=function(sample_sheet,out_name,n_cores=1,stats_out=F){
                      summits = 200)
   dba_data = dba.normalize(dba_data,normalize=DBA_NORM_LIB,bFullLibrarySize=TRUE)
   stats=dba.show(dba_data)
-  stats=stats[,-4]
+  stats=stats[,names(stats) %in% c("ID","Tissue","Factor","Intervals","Reads","FRiP")]
   print(stats)
   write.csv(stats, paste0("stats_",out_name,".csv"),row.names = F,quote=F)
   pdf(paste0("pca_",out_name,".pdf"))

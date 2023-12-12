@@ -5,6 +5,7 @@
 #SBATCH -N 1
 #SBATCH -c 8
 
+module purge
 module load anaconda3/cpu/5.3.1
 module purge
 conda activate r_env
